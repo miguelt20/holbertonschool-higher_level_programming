@@ -10,4 +10,4 @@ def uppercase(str):
             result += x
         else:
             result += alphabet[i+26]
-    print(result)
+    print("{}".format(result))
