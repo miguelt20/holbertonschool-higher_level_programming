@@ -5,5 +5,5 @@ for i in range(10):
         print("{}{}".format(i, j))
     for j in range(10):
         if j > a:
-            print("{}{}".format(i, j), end=" ")
+            print("{}{}".format(i, j), end=", ")
     a = a + 1
