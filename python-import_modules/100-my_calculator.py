@@ -6,7 +6,7 @@ if __name__ == "__main__":
     argc = len(sys.argv)
 
     if argc < 4 or argc > 4:
-        print("./100-my_calculator.py <a> <operator> <b>\n")
+        print("./100-my_calculator.py <a> <operator> <b>\n", end="")
         sys.exit(1)
     else:
         a = int(sys.argv[1])
