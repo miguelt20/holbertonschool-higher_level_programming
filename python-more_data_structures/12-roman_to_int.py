@@ -7,9 +7,9 @@ def roman_to_int(roman_string):
     else:
         for i in range(len(roman_string)):
             if i > 0 and numbers[roman_string[i]]\
-            > numbers[roman_string[i - 1]]:
+                    > numbers[roman_string[i - 1]]:
                 decimal += numbers[roman_string[i]]\
-                - 2 * numbers[roman_string[i - 1]]
+                        - 2 * numbers[roman_string[i - 1]]
             else:
                 decimal += numbers[roman_string[i]]
         return decimal
