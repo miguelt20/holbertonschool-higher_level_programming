@@ -5,7 +5,7 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             if i >= 0 and i <= 9:
                 if counter < x:
-                    print(i, end="")
+                    print("{:d}".format(i), end="")
                     counter += 1
         except:
             print("", end="")
