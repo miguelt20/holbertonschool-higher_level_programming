@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    counter = 0
-    for i in my_list:
+    my_len = 0
+    for i in range(0, x):
         try:
             if i >= 0 and i <= 9:
-                if counter < x:
-                    print("{:d}".format(i), end="")
-                    counter += 1
-        except:
-            print("", end="")
+                if my_len < x:
+                    print("{:d}".format(my_list[i]), end="")
+                    my_len += 1
+        except TypeError:
+            print("",end="")
+        except ValueError:
+            print("",end="")
     print()
-    return counter
+    return my_len
