@@ -7,8 +7,8 @@ class Square:
 
     """ Init Method """
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     """ property """
     @property
@@ -33,13 +33,15 @@ class Square:
     @position.setter
     def position(self, value):
         mssg = 'position must be a tuple of 2 positive integers'
-        if type(value) != tuple and len(value) != 2:
+        if not isinstance(value, tuple):
             raise TypeError(mssg)
-        elif not isinstance(value[0], int):
+        if len(value) != 2:
             raise TypeError(mssg)
-        elif not isinstance(value[1], int):
+        if not isinstance(value[0], int):
             raise TypeError(mssg)
-        elif value[0] < 0 or value[1] < 0:
+        if not isinstance(value[1], int):
+            raise TypeError(mssg)
+        if value[0] < 0 or value[1] < 0:
             raise TypeError(mssg)
         self.__position = value
 
