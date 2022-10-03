@@ -35,6 +35,12 @@ class Square:
         mssg = 'position must be a tuple of 2'
         if type(value) != tuple and len(value) != 2:
             raise TypeError(mssg)
+        elif not isinstance(value[0], int):
+            raise TypeError(mssg)
+        elif not isinstance(value[1], int):
+            raise TypeError(mssg)
+        elif value[0] < 0 or value[1] < 0:
+            raise TypeError(mssg)
         self.__position = value
 
     """ Method to get square area"""
