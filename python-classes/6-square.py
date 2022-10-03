@@ -55,14 +55,14 @@ class Square:
 
     """ Method that prints the square """
     def my_print(self):
-        a = self.__position[1]
-        b = self.__position[0]
-
-        if self.__size == 0:
+        if self.size == 0:
             print()
-
-        for i in range(a):
-            print()
-
-        for j in range(self.__size):
-            print((' ' * b) + ('#' * self.__size))
+        else:
+            for i in range(self.position[1]):
+                print()
+            for i in range(0, self.size):
+                for k in range(self.position[0]):
+                    print(" ", end='')
+                for j in range(self.size):
+                    print("#", end='')
+                print()
