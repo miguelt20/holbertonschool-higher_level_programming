@@ -12,6 +12,8 @@ def matrix_divided(matrix, div):
     """
     if not len(set(map(len, matrix))) == 1:
         raise TypeError("Each row of the matrix must have the same size")
+    if div == float('inf'):
+        raise OverflowError("cannot convert float to integer")
     if not isinstance(div, int or float or float('inf') or float('-inf')):
         raise TypeError("div must be a number")
     for row in matrix:
