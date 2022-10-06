@@ -13,3 +13,4 @@ class TestMaxInteger(unittest.TestCase):
         self.assertAlmostEqual(max_integer([1]), 1)
         self.assertAlmostEqual(max_integer([-1, 3, -7]), 3)
         self.assertAlmostEqual(max_integer([-4, -2, -1, -8, -9]), -1)
+        self.assertAlmostEqual(max_integer([105, 89, -7]), 105)
