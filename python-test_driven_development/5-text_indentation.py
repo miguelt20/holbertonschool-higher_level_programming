@@ -10,14 +10,18 @@ def text_indentation(text):
     """
     Function that prints a text
     """
-    counter = 0
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
+    new_line = False
     for char in text:
-        if text[counter - 1] == '.' or\
-         text[counter - 1] == '?' or text[counter - 1] == ':':
-            char = ""
-            print("\n")
-        print(char, end="")
-        counter += 1
+        if new_line:
+            if char == " ":
+                continue
+            new_line = False
+        if char == '.' or char == '?' or char == ':':
+            print(char)
+            print()
+            new_line = True
+        else:
+            print(char, end="")
