@@ -2,9 +2,6 @@
 """ Class that defines a Rectangle """
 
 
-from typing import List
-
-
 class Rectangle:
 
     """ Public class attribute """
