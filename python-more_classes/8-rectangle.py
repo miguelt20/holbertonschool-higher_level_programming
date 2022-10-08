@@ -2,9 +2,6 @@
 """ Class that defines a Rectangle """
 
 
-from cmath import rect
-
-
 class Rectangle:
 
     """ Public class attribute """
