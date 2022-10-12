@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""  
-Module that contains a 
+"""
+Module that contains a
 class MyList that inherits from list
 """
 
