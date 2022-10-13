@@ -4,7 +4,6 @@ The '7-base_geometry.py' module
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
     >>> bg = BaseGeometry()
-
     >>> try:
     ...     bg.integer_validator("age", 0)
     ... except Exception as e:
@@ -12,6 +11,7 @@ The '7-base_geometry.py' module
     ...
     [ValueError] age must be greater than 0
 
+    >>> bg = BaseGeometry()
     >>> try:
     ...     bg.integer_validator("name", "John")
     ... except Exception as e:
@@ -19,6 +19,7 @@ The '7-base_geometry.py' module
     ...
     [TypeError] name must be an integer
 
+    >>> bg = BaseGeometry()
     >>> try:
     ...     bg.integer_validator("distance", -4)
     ... except Exception as e:
@@ -26,6 +27,7 @@ The '7-base_geometry.py' module
     ...
     [ValueError] distance must be greater than 0
 
+    >>> bg = BaseGeometry()
     >>> try:
     ...     bg.integer_validator(1)
     ... except Exception as e:
@@ -33,6 +35,7 @@ The '7-base_geometry.py' module
     ...
     [TypeError] BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
 
+    >>> bg = BaseGeometry()
     >>> try:
     ...     bg.integer_validator()
     ... except Exception as e:
