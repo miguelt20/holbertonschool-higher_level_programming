@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Module with a class """
-from ast import arg
 from models.base import Base
 
 
@@ -88,7 +87,8 @@ class Rectangle(Base):
 {self.__y} - {self.__width}/{self.__height}"
 
     def update(self, *args):
-        """ Assigns an argument to each attribute """
+        """ Assigns an argument to each attribute
+            Update the Rectangle """
 
         self.id = args[0]
         if len(args) > 1:
