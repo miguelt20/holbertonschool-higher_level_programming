@@ -74,3 +74,7 @@ class Rectangle(Base):
 
         [[print("#", end="\n" if width == self.__width - 1 else "")
           for width in range(self.__width)] for height in range(self.__height)]
+
+    def __str__(self):
+        return f"[Rectangle] ({self.id}) {self.__x}/\
+{self.__y} - {self.__width}/{self.__height}"
