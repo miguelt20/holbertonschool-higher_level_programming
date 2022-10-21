@@ -41,9 +41,9 @@ class Rectangle(Base):
         self.__x = value
 
     @property
-    def z(self):
-        return self.__x
+    def y(self):
+        return self.__y
 
-    @z.setter
-    def z(self, value):
-        self.__z = value
+    @y.setter
+    def y(self, value):
+        self.__y = value
