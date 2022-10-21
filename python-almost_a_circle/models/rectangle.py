@@ -68,3 +68,9 @@ class Rectangle(Base):
         """ Area method """
 
         return self.__width * self.__height
+
+    def display(self):
+        """ Displays method that prints a rectangle """
+
+        [[print("#", end="\n" if width == self.__width - 1 else "")
+          for width in range(self.__width)] for height in range(self.__height)]
