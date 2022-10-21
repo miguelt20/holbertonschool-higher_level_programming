@@ -72,8 +72,13 @@ class Rectangle(Base):
     def display(self):
         """ Displays method that prints a rectangle """
 
-        [[print("#", end="\n" if width == self.__width - 1 else "")
-          for width in range(self.__width)] for height in range(self.__height)]
+        for i in range(self.__y):
+            print()
+        for j in range(self.__height):
+            for k in range(1):
+                print(" " * self.__x, end="")
+                print("#" * self.__width, end="")
+            print()
 
     def __str__(self):
         return f"[Rectangle] ({self.id}) {self.__x}/\
