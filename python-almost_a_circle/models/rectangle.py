@@ -6,14 +6,14 @@ from models.base import Base
 class Rectangle(Base):
     """ Class Rectangle inherits from Base """
 
-    """ Constructor """
-
     def __init__(self, width, height, x=0, y=0, id=None):
-        super().__init__(id)
+        """ Constructor """
+
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+        super().__init__(id)
 
     """ Getters and Setters """
     @property
@@ -113,3 +113,8 @@ class Rectangle(Base):
                     self.__x = value
                 if key == "y":
                     self.__y = value
+
+    def to_dictionary(self):
+        """ Dictionary representation """
+
+        return self.__dict__
