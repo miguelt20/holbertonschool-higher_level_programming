@@ -16,5 +16,7 @@ if __name__ == "__main__":
     session = Session()
 
     record = session.query(State).first()
-
-    print("{}: {}".format(record.id, record.name))
+    if record is not None:
+        print("{}: {}".format(record.id, record.name))
+    else:
+        print("Nothing")
