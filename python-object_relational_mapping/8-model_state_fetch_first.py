@@ -15,5 +15,7 @@ if __name__ == "__main__":
     Session.configure(bind=engine)
     session = Session()
 
-    for instance in session.query(State).filter(State.id == 1):
+    record = session.query(State).filter(State.id == 1)
+
+    for instance in record:
         print("{}: {}".format(instance.id, instance.name))
