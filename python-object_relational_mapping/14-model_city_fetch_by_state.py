@@ -22,4 +22,4 @@ if __name__ == "__main__":
         City.state_id == State.id).order_by(City.id)
 
     for St, Ct in record:
-        print("{}: ({}) {}".format(St.name, St.id, Ct.name))
+        print("{}: ({}) {}".format(Ct.name, St.id, St.name))
