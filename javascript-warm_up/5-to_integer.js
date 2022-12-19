@@ -1,7 +1,5 @@
 #!/usr/bin/node
 
-import process from 'process';
-
 const arg = process.argv;
 
 if (!isNaN(arg[2])) {

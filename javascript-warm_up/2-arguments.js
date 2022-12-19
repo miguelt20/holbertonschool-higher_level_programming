@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-import process from 'process';
 const nArgs = process.argv.length - 2;
+
 if (nArgs === 0) {
   console.log('No argument');
 } else if (nArgs === 1) {
