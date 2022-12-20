@@ -8,7 +8,7 @@ if (argsLenght === 0) {
 } else if (argsLenght === 1) {
   console.log(0);
 } else {
-  args.sort();
+  args.sort(function (a, b) { return a - b; });
   const secondLast = parseInt(args[argsLenght]);
   console.log(secondLast);
 }
