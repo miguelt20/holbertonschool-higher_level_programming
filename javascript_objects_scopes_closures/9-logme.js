@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-let myFuncCalls = 0;
+let myFuncCalls = 0 - 1;
 
 exports.logMe = function (item) {
-  myFuncCalls++;
+  myFuncCalls += 1;
   console.log(`${myFuncCalls}` + ':' + ` ${item}`);
 };
