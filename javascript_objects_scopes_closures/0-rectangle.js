@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
-exports.Rectangle = class {
+export class Rectangle {
 
-};
+}
