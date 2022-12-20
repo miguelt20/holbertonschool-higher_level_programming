@@ -10,7 +10,7 @@ module.exports = class square extends Square {
     for (let i = 0; i < this.height; i++) {
       let rectangle = '';
       for (let j = 0; j < this.width; j++) {
-        if (c === 'C') { rectangle += 'C'; } else { rectangle += 'X'; }
+        if (c) { rectangle += c; } else { rectangle += 'X'; }
       }
       console.log(rectangle);
     }
