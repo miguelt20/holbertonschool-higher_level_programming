@@ -15,7 +15,8 @@ function callback (error, response, body) {
       if (d.completed === true) { dic[d.userId] += 1; }
     }
     const copyDic = dic;
-    for (let i = 0; i < copyDic.length; i++) {
+    const keys = Object.keys(copyDic);
+    for (let i = 0; i < keys.length; i++) {
       if (copyDic[i] === 0) {
         delete dic[i];
       }
