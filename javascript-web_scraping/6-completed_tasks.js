@@ -14,6 +14,12 @@ function callback (error, response, body) {
     for (const d of data) {
       if (d.completed === true) { dic[d.userId] += 1; }
     }
+    const copyDic = dic;
+    for (let i = 0; i < copyDic.length; i++) {
+      if (copyDic[i] === 0) {
+        delete dic[i];
+      }
+    }
     console.log(dic);
   }
 }
