@@ -16,7 +16,7 @@ function callback (error, response, body) {
     }
     const copyDic = dic;
     const keys = Object.keys(copyDic);
-    for (let i = 1; i < keys.length; i++) {
+    for (let i = 1; i <= keys.length; i++) {
       if (copyDic[i] === 0) {
         delete dic[i];
       }
