@@ -14,8 +14,30 @@
  <td><div align="center">NodeJS</div></td>
 </tr>
 
-</table> 
+</table>
+ 
+ In this repository you'll find excercises related with Python, SQL, JavaScript and NodeJS, developing a great understanding and skills of the languages.
 </div>
+ 
+ 
 
+ <h3> Python </h3>
 
+Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
 
+Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming.
+
+Here are some of the topics that you can find in the python directories:
+
+ - if/else
+ - Loops
+ - Functions
+ - import & modules
+ - Lists & Tuples
+ - Set & Dictionaries
+ - Exceptions
+ - Classes & Objects
+ - Test-driven Development
+ - Inheritance
+ - Input/Ouput
+ - Flask
