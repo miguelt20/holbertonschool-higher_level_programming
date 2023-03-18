@@ -16,7 +16,7 @@
 
 </table>
  
- In this repository you'll find exercises related with Python, SQL, JavaScript and NodeJS, developing a great understanding and skills of the languages.
+ In this repository you'll find exercises related with Python, SQL, JavaScript and NodeJS, developing a great understanding and skills of these programming languages.
 </div>
  
  
